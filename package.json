@@ -4,7 +4,7 @@
     "url": "https://github.com/HappyTanuki/Project-N-UI.git"
   },
   "name": "project_n_electron",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "project n lobby electron",
   "main": "main.js",
   "scripts": {

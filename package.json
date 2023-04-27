@@ -1,0 +1,14 @@
+{
+  "name": "project_n_electron",
+  "version": "0.1.1",
+  "description": "project n lobby electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.1.2"
+  }
+}

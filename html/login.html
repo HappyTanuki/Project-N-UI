@@ -1,0 +1,29 @@
+<!DOTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
+    </head>
+    <body>
+        <div id="window">
+            <video muted autoplay loop>
+                <source src="../login animation/playback.mp4" type="video/mp4">
+            </video>
+            <form id="loginForm">
+                <div id="loginBox">
+                    <div id="idBorder">
+                        <input id="ID" type="text" autofocus required placeholder="아이디를 입력하세요.">
+                    </div>
+                    <div id="passwdBorder">
+                        <input id="passwd" type="password" required placeholder="비밀번호를 입력하세요.">
+                    </div>
+                    <input id="loginBtn" type="submit" value="로그인">
+                    <a href="register.html">회원가입</a>
+                </div>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <script	src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+        <script src="../js/login.js"></script>
+    </footer>
+</html>

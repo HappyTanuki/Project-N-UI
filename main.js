@@ -1,6 +1,17 @@
 const {app, BrowserWindow, ipcMain, session} = require("electron");
 const path = require('path');
-const SERVERADDRESS = require("fs").readFileSync("serverAddress", "utf-8");
+let SERVERADDRESS;
+
+let fs = require("fs");
+fs.readFile("serverAddress", "utf-8", (err, data) => {
+    if (err) {
+        SERVERADDRESS = "http://127.0.0.1:1397";
+        fs.writeFile("serverAddress", SERVERADDRESS, (err) => console.log(err));
+    }
+    else {
+        SERVERADDRESS = data;
+    }
+});
 
 let window;
 

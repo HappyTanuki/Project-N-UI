@@ -6,19 +6,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             SERVERADDRESS = payload;
     });
 });
-
 document.getElementById("registerForm").addEventListener("submit", submit);
-
-function gotoLobby(response, encPasswd){
-    const ID = document.getElementById("ID").value;
-    const payload = {
-        id: ID,
-        passwd: encPasswd
-    };
-    console.log("submitted");
-    parent.window.ipcAPI.setId(payload);
-    parent.location.href="lobby.html";
-}
+document.getElementById("registerBox").addEventListener("click", (event) => {
+    if (event.target.id === "returnBtn") {
+        location.href="register.html";
+    }
+});
 
 async function submit(event) {
     event.preventDefault();
@@ -49,18 +42,23 @@ async function submit(event) {
             if (response.ok){
                 gotoLobby(response, encPasswd);
             } else {
-                document.querySelector("#ID").remove();
-                document.querySelector("#idBorder").remove();
-                document.querySelector("#passwd").remove();
-                document.querySelector("#passwdBorder").remove();
-                document.querySelector("#passwdCheck").remove();
-                document.querySelector("#passwdCheckBorder").remove();
-                document.querySelector("#submitBtn").remove();
-                document.querySelector("#submitBox>a").remove();
+                document.querySelector("#registerBox>h1").remove();
+                document.getElementById("ID").remove();
+                document.getElementById("idBorder").remove();
+                document.getElementById("passwd").remove();
+                document.getElementById("passwdBorder").remove();
+                document.getElementById("passwdCheck").remove();
+                document.getElementById("passwdCheckBorder").remove();
+                document.getElementById("submitBtn").remove();
+                document.getElementById("registerBox").appendChild(document.createElement("h1"));
+                let returnBtn = document.createElement("button");
+                returnBtn.id = "returnBtn";
+                returnBtn.appendChild(document.createTextNode("재입력하기"));
+                document.getElementById("registerBox").appendChild(returnBtn);
                 if (response.status === 409){
-                        document.querySelector("#registerBox").innerHTML="<h2>이미 가입한 계정입니다.</h2>";
+                    document.querySelector("#registerBox>h1").innerText = "이미 가입한 계정입니다.";
                 } else {
-                        document.querySelector("#registerBox").innerHTML="<h2>알 수 없는 오류가 발생하였습니다.</h2>";
+                    document.querySelector("#registerBox>h1").innerText = "알 수 없는 오류가 발생하였습니다.";
                 }
             }
         });

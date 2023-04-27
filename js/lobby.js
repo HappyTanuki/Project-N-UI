@@ -6,6 +6,22 @@ closeBtn.addEventListener("mouseout",   closeBtnOut);
 
 let gameStartBtn = document.getElementById("gameStart");
 
+gameStartBtn.addEventListener("click",   handleGameStartBtn);
+gameStartBtn.addEventListener("mouseover", gameStartBtnOver);
+gameStartBtn.addEventListener("mouseout",   gameStartBtnOut);
+
+function handleGameStartBtn() {
+    location.href="match.html";
+}
+
+function gameStartBtnOver() {
+    gameStartBtn.style.backgroundColor = "#e81123";
+}
+
+function gameStartBtnOut() {
+    gameStartBtn.style.backgroundColor = "#cccccc";
+}
+
 gameStartBtn.onselectstart = () => {
     return false;
 }

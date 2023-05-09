@@ -28,7 +28,7 @@ function createWindow() {
             preload: path.join(__dirname, 'preload.js')
         }
     });
-    window.webContents.toggleDevTools();
+    window.webContents.toggleDevTools(); //only for develop purpose
 
     window.loadFile(path.join(__dirname, 'html/index.html'))
         .then(() => {

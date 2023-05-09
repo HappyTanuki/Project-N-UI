@@ -13,6 +13,15 @@ document.getElementById("registerBox").addEventListener("click", (event) => {
     }
 });
 
+async function gotoLobby(response, ID, encPasswd){
+    const payload = {
+        id: ID,
+        passwd: encPasswd
+    };
+    parent.window.ipcAPI.setId(payload);
+    parent.location.href="lobby.html";
+}
+
 async function submit(event) {
     event.preventDefault();
     
@@ -40,7 +49,7 @@ async function submit(event) {
         })
         .then((response) => {
             if (response.ok){
-                gotoLobby(response, encPasswd);
+                gotoLobby(response, ID, encPasswd);
             } else {
                 document.querySelector("#registerBox>h1").remove();
                 document.getElementById("ID").remove();

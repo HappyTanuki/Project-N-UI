@@ -11,7 +11,7 @@ gameStartBtn.addEventListener("mouseover", gameStartBtnOver);
 gameStartBtn.addEventListener("mouseout",   gameStartBtnOut);
 
 function handleGameStartBtn() {
-    location.href="match.html";
+    location.href="matchmake.html";
 }
 
 function gameStartBtnOver() {

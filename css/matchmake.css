@@ -37,12 +37,18 @@ aside>section {
     height: 100%;
 }
 
+#makeRoom {
+    display: flex;
+    justify-content: space-between;
+}
+
 #closeBtn {
     width: 45px;
     height: 30px;
     -webkit-app-region: no-drag;
     float: right;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #cccccc;
@@ -50,18 +56,7 @@ aside>section {
     cursor: default;
 }
 
-#profile {
-    width: 174px;
-    height: auto;
-    font-size: 16px;
-    padding: 7px 3px;
-    float: right;
-    text-align: left;
-    background-color: #3c3c3c;
-    color: #cccccc;
-}
-
-#users {
+#rooms {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -69,7 +64,7 @@ aside>section {
     margin: 0 auto;
 }
 
-#users div {
+#rooms div {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 3px;

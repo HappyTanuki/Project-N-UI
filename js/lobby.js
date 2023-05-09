@@ -35,7 +35,6 @@ gameStartBtn.oncontextmenu = () => {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log(window.ipcAPI);
     window.ipcAPI.getId()
     .then((payload) => {
         console.log(payload);

@@ -1,0 +1,214 @@
+riana.png
+size:4096,4096
+filter:Linear,Linear
+pma:true
+scale:0.2
+Arm_R_1
+bounds:1647,1760,119,212
+offsets:0,178,292,390
+Arm_R_2
+bounds:2196,1929,204,213
+offsets:0,31,243,244
+rotate:90
+B_Hair
+bounds:1251,1707,265,394
+rotate:90
+Butterfly Spirit_1
+bounds:2512,1967,110,78
+Butterfly Spirit_2
+bounds:2411,1932,99,113
+Butterfly Spirit_3
+bounds:846,1502,74,73
+Butterfly Spirit_effect_1
+bounds:2624,1965,80,95
+offsets:0,0,82,97
+rotate:90
+Butterfly Spirit_effect_2
+bounds:3207,3513,61,49
+Butterfly Spirit_effect_3
+bounds:4024,3740,84,70
+offsets:13,0,97,71
+rotate:90
+Butterfly Spirit_effect_4
+bounds:922,1540,31,35
+offsets:0,2,31,37
+Butterfly Spirit_effect_5
+bounds:1703,1656,31,49
+offsets:6,0,39,53
+Eye_1
+bounds:3207,3484,30,27
+Eye_2
+bounds:3329,3532,31,30
+offsets:67,2,98,32
+F_hair_1
+bounds:2697,3105,87,132
+F_hair_2
+bounds:618,1484,75,152
+rotate:90
+F_hair_3
+bounds:311,92,80,96
+rotate:90
+F_hair_4
+bounds:2697,3239,84,168
+F_hair_5
+bounds:1233,1458,247,267
+offsets:0,45,247,312
+rotate:90
+Head
+bounds:3884,3826,205,268
+L_a_1
+bounds:376,749,206,122
+L_a_2
+bounds:2158,1763,164,214
+rotate:90
+L_arm_acc
+bounds:2374,1859,25,68
+offsets:0,0,25,69
+L_arm_gem
+bounds:618,1460,45,22
+L_c_I
+bounds:2423,2346,271,440
+offsets:1,0,272,440
+L_ear
+bounds:311,174,113,110
+L_eyelid
+bounds:2512,1936,45,29
+L_hand
+bounds:1502,1472,233,199
+rotate:90
+L_leg
+bounds:1770,1950,183,424
+offsets:0,0,183,467
+rotate:90
+L_leg_calf
+bounds:618,1561,205,572
+R_arm_acc
+bounds:2158,1734,27,69
+offsets:0,0,27,71
+rotate:90
+R_arm_cloth_B
+bounds:376,873,203,581
+offsets:0,1,203,582
+R_arm_cloth_F
+bounds:376,1456,240,677
+offsets:0,0,272,677
+R_arm_gem
+bounds:481,531,19,41
+R_cloth_Out
+bounds:3180,3640,317,454
+offsets:3,32,320,535
+R_ear
+bounds:311,286,122,130
+offsets:0,0,124,130
+R_eyelid
+bounds:243,12,45,29
+R_hand_finger_1
+bounds:581,1407,35,47
+offsets:0,10,35,57
+R_hand_finger_2
+bounds:2743,3016,38,87
+offsets:0,0,38,89
+R_hand_palm
+bounds:3370,3555,105,83
+R_leg
+bounds:1251,1974,159,517
+rotate:90
+R_leg_calf
+bounds:825,1577,136,556
+Top
+bounds:963,1739,286,394
+offsets:0,24,287,418
+bell
+bounds:2743,2961,49,53
+offsets:2,1,51,54
+close_Eyelashes
+bounds:2697,2948,155,44
+offsets:1,0,160,44
+rotate:90
+eye_white
+bounds:2697,2808,138,50
+rotate:90
+eyebrow
+bounds:3884,3793,138,31
+offsets:0,0,149,31
+fire spirit
+bounds:2423,2788,619,272
+offsets:0,0,633,272
+rotate:90
+fire spirit_effect_1
+bounds:3499,3609,366,180
+fire spirit_effect_2
+bounds:2798,3414,336,142
+fire spirit_effect_3
+bounds:772,1480,72,79
+fire spirit_effect_4
+bounds:311,574,191,173
+offsets:0,1,191,174
+head_가이드
+bounds:963,1487,250,268
+offsets:893,1420,2404,1952
+rotate:90
+open_Eyelashes
+bounds:504,587,160,62
+offsets:0,0,160,70
+rotate:90
+ribbon_1
+bounds:243,43,66,59
+offsets:1,1,67,61
+ribbon_2
+bounds:3270,3511,51,57
+offsets:0,1,53,58
+rotate:90
+ribbon_3
+bounds:3136,3483,73,69
+rotate:90
+ribbon_4
+bounds:1647,1707,51,73
+offsets:0,2,51,75
+rotate:90
+skirt
+bounds:2798,3558,380,536
+skirt_inside
+bounds:2423,3409,373,685
+offsets:0,0,373,713
+stone spirit
+bounds:1768,1737,211,213
+offsets:0,32,249,245
+rotate:90
+stone spirit_arm_1
+bounds:3136,3431,71,50
+stone spirit_arm_2
+bounds:1722,1707,51,37
+offsets:0,2,51,39
+rotate:90
+tail
+bounds:2,104,307,646
+water spirit
+bounds:3499,3791,383,303
+water spirit_effect
+bounds:2229,1737,33,24
+offsets:5,0,38,24
+water spirit_effect_1
+bounds:311,6,92,84
+water spirit_effect_2
+bounds:1983,1732,173,216
+weapon
+bounds:2,752,372,1381
+offsets:215,0,605,1384
+weapon_cloth
+bounds:2,12,90,239
+offsets:89,54,246,421
+rotate:90
+weapon_jewel
+bounds:3180,3564,74,188
+offsets:0,0,74,190
+rotate:90
+weapon_jewel_highlight
+bounds:2423,2047,290,297
+weapon_leaf
+bounds:428,427,51,145
+레이어 1
+bounds:2,2135,2419,1959
+레이어 6
+bounds:311,418,115,154
+offsets:1,4,116,158

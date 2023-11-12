@@ -1,23 +1,41 @@
-<!DOTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Lobby</title>
         <link rel="stylesheet" type="text/css" href="../css/lobby.css">
     </head>
     <body>
+        <img id="backgroundImage" src="../UI_Image/UI/Lobby/Background.png"></div>
         <section id="bodySection">
-            <div id="gameStart"><h1>게임 시작</h1></div>
-        </section>
-        <aside>
-            <header>
-                <div id="closeBtn">✕</div>
-            </header>
-            <section>
-                <div id="profile">
-                    #닉네임
+            <div id="buttons">
+                <button type="button" id="backspace">
+                    <img src="../UI_Image/UI/Lobby/Backspace.png">
+                </button>
+                <button type="button" id="gameStart">
+                    <img src="../UI_Image/UI/Lobby/GameStart.png">
+                </button>
+                <div class="spacer"></div>
+            </div>
+            <div id="virticalAlign">
+                <div id="rooms">
+                    <button type="button" class="character" id="Lb">
+                        <img class="Frame" src="../UI_Image/UI/Lobby/Frame.png">
+                        <img class="FramedImage" src="../UI_Image/UI/Lobby/Lb.png">
+                    </button>
+                    <button type="button" class="character" id="Riana">
+                        <img class="Frame" src="../UI_Image/UI/Lobby/Frame.png">
+                        <img class="FramedImage" src="../UI_Image/UI/Lobby/Riana.png">
+                    </button>
+                    <button type="button" class="character" id="Allium">
+                        <img class="Frame" src="../UI_Image/UI/Lobby/Frame.png">
+                        <img class="FramedImage" src="../UI_Image/UI/Lobby/Allium.png">
+                    </button>
+                    <button type="button" class="character" id="Lukriel">
+                        <img class="Frame" src="../UI_Image/UI/Lobby/Frame(locked).png">
+                        <img class="FramedImage" src="../UI_Image/UI/Lobby/Lukriel.png">
+                    </button>
                 </div>
-            </section>
-        </aside>
+            </div>
+        </section>
         <footer>
             <script src="../js/lobby.js"></script>
         </footer>

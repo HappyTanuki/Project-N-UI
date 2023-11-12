@@ -1,67 +1,56 @@
-let closeBtn = document.getElementById("closeBtn");
+let showCharacters = document.getElementsByClassName("character");
+let body = document.getElementById("bodySection");
+let backspace = document.getElementById("backspace");
+let gamestart = document.getElementById("gameStart");
 
-closeBtn.addEventListener("click",      closeWindow);
-closeBtn.addEventListener("mouseover", closeBtnOver);
-closeBtn.addEventListener("mouseout",   closeBtnOut);
+backspace.addEventListener("click", gotoLogin);
+gamestart.addEventListener("click", gotoMatchmake);
 
-let gameStartBtn = document.getElementById("gameStart");
-
-gameStartBtn.addEventListener("click",   handleGameStartBtn);
-gameStartBtn.addEventListener("mouseover", gameStartBtnOver);
-gameStartBtn.addEventListener("mouseout",   gameStartBtnOut);
-
-function handleGameStartBtn() {
-    location.href="matchmake.html";
+for (let item of showCharacters) {
+    if (item.id == "Lb") {
+        item.addEventListener("click", gotoLbDesc);
+    }
+    else if (item.id == "Riana") {
+        item.addEventListener("click", gotoRianaDesc);
+    }
+    else if (item.id == "Allium") {
+        item.addEventListener("click", gotoAlliumDesc);
+    }
 }
 
-function gameStartBtnOver() {
-    gameStartBtn.style.backgroundColor = "#e81123";
+function gotoLbDesc() {
+    console.log("Lb clicked");
+    location.href="characterIntroduce.html?char=Lb"
 }
 
-function gameStartBtnOut() {
-    gameStartBtn.style.backgroundColor = "#cccccc";
+function gotoRianaDesc() {
+    console.log("Riana clicked");
+    location.href="characterIntroduce.html?char=Riana"
 }
 
-gameStartBtn.onselectstart = () => {
+function gotoAlliumDesc() {
+    console.log("Alium clicked");
+    location.href="characterIntroduce.html?char=Allium"
+}
+
+function gotoLogin() {
+    console.log("clicked");
+    location.href="index.html"
+}
+
+function gotoMatchmake() {
+    console.log("clicked");
+    location.href="matchmake.html"
+}
+
+body.onselectstart = () => {
     return false;
 }
 
-gameStartBtn.ondragstart = () => {
+body.ondragstart = () => {
     return false;
 }
 
-gameStartBtn.oncontextmenu = () => {
+body.oncontextmenu = () => {
     return false;
-}
-
-document.addEventListener('DOMContentLoaded', async () => {
-    window.ipcAPI.getId()
-    .then((payload) => {
-        console.log(payload);
-        document.querySelector("#profile").innerHTML = payload[0]["name"];
-    });
-});
-
-closeBtn.onselectstart = () => {
-    return false;
-}
-
-closeBtn.ondragstart = () => {
-    return false;
-}
-
-closeBtn.oncontextmenu = () => {
-    return false;
-}
-
-function closeWindow(){
-    window.close();
-}
-
-function closeBtnOver(){
-    closeBtn.style.backgroundColor = "#e81123";
-}
-
-function closeBtnOut(){
-    closeBtn.style.backgroundColor = "#3c3c3c";
 }

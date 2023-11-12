@@ -19,7 +19,8 @@ function createWindow() {
     const window = new BrowserWindow({
         width: 1600,
         height: 900,
-        title: "Project D",
+        // resizable: false,
+        title: "Promether",
         frame: false,
         show: false,
         webPreferences: {

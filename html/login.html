@@ -5,19 +5,25 @@
     </head>
     <body>
         <div id="window">
-            <video muted autoplay loop>
-                <source src="../login animation/playback.mp4" type="video/mp4">
-            </video>
+            <img id="Background" src="../UI_Image/UI/Login/Background.png">
             <form id="loginForm">
+                <img id="loginWindowImage" src="../UI_Image/UI/Login/LoginWindow.png">
                 <div id="loginBox">
-                    <div id="idBorder">
-                        <input id="ID" type="text" autofocus required placeholder="아이디를 입력하세요.">
+                    <div style="padding-top: 100px;">
+                        <img src="../UI_Image/UI/Login/Enter_Your_NickName.png">
+                        <div id="idBorder">
+                            <input id="ID" type="text" autofocus required>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <img src="../UI_Image/UI/Login/Save_Nickname.png">
+                        </div>
+                        <button id="loginBtn" type="submit">
+                            <img src="../UI_Image/UI/Login/Login.png">
+                        </button>
+                        <!-- <input id="loginBtn" type="submit" value="로그인">
+                        <a href="register.html">회원가입</a> -->
                     </div>
-                    <div id="passwdBorder">
-                        <input id="passwd" type="password" required placeholder="비밀번호를 입력하세요.">
-                    </div>
-                    <input id="loginBtn" type="submit" value="로그인">
-                    <a href="register.html">회원가입</a>
                 </div>
             </form>
         </div>

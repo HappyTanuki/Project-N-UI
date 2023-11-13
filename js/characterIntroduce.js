@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         new spine.SpinePlayer("player-container", {
             viewport: {
                 x: -3200,
-                y: -100,
+                y: -50,
                 width: 3840,
                 height: 2160,
                 padLeft: "0%",

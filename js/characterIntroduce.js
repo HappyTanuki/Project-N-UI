@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById("Name").innerText = "알리움";
         new spine.SpinePlayer("player-container", {
             viewport: {
-                x: -3000,
-                y: -200,
+                x: -3200,
+                y: -100,
                 width: 3840,
                 height: 2160,
                 padLeft: "0%",
@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 padTop: "0%",
                 padBottom: "0%"
             },
-            jsonUrl: "../spine/allium_json/allium_3.json",
-            atlasUrl: "../spine/allium_json/allium_1.atlas",
+            jsonUrl: "../spine/allium_json/allium.json",
+            atlasUrl: "../spine/allium_json/allium.atlas",
     
             animation: "animation",
             showControls: false,
@@ -94,9 +94,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             },
     
             rawDataURIs: {
-                "allium.bytes": "../spine/allium_bytes/allium.bytes",
-                "allium_lliuste.atlas": "../spine/allium_bytes/allium_lliuste.atlas",
-                "allium_png.png": "../spine/allium_bytes/allium_png.png"
+                "allium.skel.bytes": "../spine/allium_by/allium.skel.bytes",
+                "allium.atlas": "../spine/allium_by/allium.atlas",
+                "allium.png": "../spine/allium_by/allium.png"
             }
         });
     }

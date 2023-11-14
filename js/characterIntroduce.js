@@ -1,3 +1,10 @@
+document.getElementById("gotoSkillpage").addEventListener("click", gotoSkillpage);
+
+function gotoSkillpage() {
+    const urlParams = new URL(location.href).searchParams;
+    location.href="skillDescription.html?char=" + urlParams.get('char');
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     // window.ipcAPI.getId()
     // .then((payload) => {

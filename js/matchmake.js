@@ -1,14 +1,10 @@
-let showCharacters = document.getElementsByClassName("character");
+let SERVERADDRESS;
 let body = document.getElementById("bodySection");
-let backspace = document.getElementById("backspace");
+let backspace = document.getElementById("backspace").addEventListener("click", gotoLobby);
 let gamestart = document.getElementById("gameStart");
 
-for (let item of showCharacters) {
-    item.addEventListener("click", gotoCharacterDesc);
-}
-
-function gotoCharacterDesc() {
-    console.log("clicked");
+function gotoLobby() {
+    location.href="lobby.html";
 }
 
 body.onselectstart = () => {
@@ -21,4 +17,16 @@ body.ondragstart = () => {
 
 body.oncontextmenu = () => {
     return false;
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    window.ipcAPI.getServerAddress()
+        .then((payload) => {
+            SERVERADDRESS = payload;
+            console.log(SERVERADDRESS);
+    });
+});
+
+function addLeaderMark(user) {
+    document.getElementsByClassName("user")[user].innerHTML = "<img src=\"../UI_Image/UI/User_Lounge/Leader.png\"></img>";
 }

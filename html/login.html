@@ -6,19 +6,19 @@
     <body>
         <div id="window">
             <img id="Background" src="../UI_Image/UI/Login/Background.png">
-            <form id="loginForm">
+            <form id="loginForm" style="margin: 25px;">
                 <img id="loginWindowImage" src="../UI_Image/UI/Login/LoginWindow.png">
-                <div id="loginBox">
+                <div id="loginBox" style="padding: 0px 61px; width: 261px; height: 282px;">
                     <div style="padding-top: 100px;">
-                        <img src="../UI_Image/UI/Login/Enter_Your_NickName.png">
-                        <div id="idBorder">
-                            <input id="ID" type="text" autofocus required>
+                        <img src="../UI_Image/UI/Login/Enter_Your_NickName.png" style="margin-bottom: 2.5px;">
+                        <div id="idBorder" style="height:23px; margin: 2.5px 0px;">
+                            <input id="ID" type="text" autofocus="" required="" style="width: 241px; height: 25px;">
                         </div>
-                        <div>
-                            <input type="checkbox">
-                            <img src="../UI_Image/UI/Login/Save_Nickname.png">
+                        <div style="padding: 2.5px 0px;">
+                            <input type="checkbox" style="width: 14px; height: 14px">
+                            <img src="../UI_Image/UI/Login/Save_Nickname.png" style="width: 72px; height: 11px;">
                         </div>
-                        <button id="loginBtn" type="submit">
+                        <button id="loginBtn" type="submit" style="float:right; margin-top: 11.5px">
                             <img src="../UI_Image/UI/Login/Login.png">
                         </button>
                         <!-- <input id="loginBtn" type="submit" value="로그인">
@@ -27,9 +27,10 @@
                 </div>
             </form>
         </div>
-    </body>
+
     <footer>
-        <script	src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
         <script src="../js/login.js"></script>
     </footer>
+    </body>
 </html>

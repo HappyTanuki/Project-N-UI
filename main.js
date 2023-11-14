@@ -19,7 +19,7 @@ function createWindow() {
     const window = new BrowserWindow({
         width: 1600,
         height: 900,
-        // resizable: false,
+        resizable: false,
         title: "Promether",
         frame: false,
         show: false,

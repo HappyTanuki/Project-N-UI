@@ -10,13 +10,6 @@ body {
     overflow: hidden;
 }
 
-#header {
-    width: auto;
-    height: 30px;
-    -webkit-app-region: drag;
-    background-color: #3c3c3c;
-}
-
 #backgroundImage {
     width: 100%;
     position: absolute;

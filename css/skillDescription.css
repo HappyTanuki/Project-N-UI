@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#player-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+#background {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+#overlay-background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#Name{
+    color: #FFFFFF;
+    font-size: 48px;
+}
